@@ -1,0 +1,68 @@
+<head>
+	<style type="text/css">
+
+	a:link {   
+ 
+ 	text-decoration:none;   
+
+	}   
+
+	</style>
+
+</head>
+
+<header>
+	<img class="cabeza" src="/images/manos.jpg"/>
+	<p class="primerafrase">Here you cand find the best concerts and festivals around Europe</p>
+</header>
+
+<article>
+
+	<h1>Concerts today:</h1>
+	<% @concerts.each do |concert|%>
+		<div><p class="BotonNuevo"><%= link_to concert.band, concert_path(concert)%></p> 
+			<%= concert.date %>
+			|| <%= link_to 'Destroy', concert_path(concert), method: :delete, data: { confirm: 'Are you sure?' } %>
+			|| <%= link_to 'Edit', edit_concert_path(concert) %>
+		<hr>
+		</div>
+	<% end %>
+
+	<p class="BotonNuevo">
+	    <%= link_to 'Nuevo concierto', new_concert_path %>
+	</p>
+	
+	<hr>
+	<h1>Top 10 likes concerts:</h1>
+	<% @concertsLikes.each do |concertsLikes|%>
+		<div><p class="BotonNuevo"><%= link_to concertsLikes.band, concert_path(concertsLikes)%></p> 
+			Total likes: <%= concertsLikes.likes %>
+		<hr>
+		</div>
+	<% end %>
+
+
+
+</article>
+
+
+
+<aside>
+		<h1> Later this month... </h1>
+		<% @concertsRestantesMes.each do |concertsRestantesMes|%>
+		<div>
+			<p class="BotonNuevo">
+				<%= link_to concertsRestantesMes.band, concert_path(concertsRestantesMes)%>
+			</p>
+			<%= concertsRestantesMes.date %>
+			<hr>
+		</div>
+	<% end %>
+</aside>
+
+<footer class="indexfooter">
+	<hr>
+	<p>Página web creada por: Manu Ábalos, Alfredo García, Jose Luis Cantalejo y Pablo Iriarte</p>
+	<p>-30 de Abril de 2015-</p>
+</footer>
+

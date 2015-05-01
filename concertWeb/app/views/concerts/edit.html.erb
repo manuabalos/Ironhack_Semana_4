@@ -1,0 +1,73 @@
+<head>
+  <style type="text/css">
+
+  a:link {   
+ 
+  text-decoration:none;   
+
+  }   
+
+  </style>
+
+</head>
+
+<header>
+    <img class="cabeza" src="/images/manos.jpg"/>
+</header>
+
+<h3>Editing a concert</h3>
+
+<%= form_for @concert do |f| %>
+ 
+ <% if @concert.errors.any? %>
+   <h2>Errors:</h2>
+   <ul>
+     <% @concert.errors.full_messages.each do |message| %>
+       <li><%= message %></li>
+     <% end %>
+   </ul>
+ <% end %>
+
+
+  <p>
+    <%= f.label :band %><br>
+    <%= f.text_field :band %>
+  </p>
+
+  <p>
+    <%= f.label :venue %><br>
+    <%= f.text_field :venue %>
+  </p>
+
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p class="BotonBack"><%= link_to 'Back', concerts_path%></p>
+
+<footer>
+  <hr>
+  <p>Página web creada por: Manu Ábalos, Alfredo García, Jose Luis Cantalejo y Pablo Iriarte</p>
+  <p>-30 de Abril de 2015-</p>
+</footer>

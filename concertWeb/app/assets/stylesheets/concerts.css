@@ -1,0 +1,134 @@
+header {
+	font-family: "Gill Sans";
+	font-size: 50px;
+	text-align: center;
+	align: center;
+
+}
+
+article {
+	font-family: "Gill Sans";
+	font-size: 15px;
+	float:left;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	
+}
+
+body {
+	background-color: Gainsboro;
+	font-family: "Gill Sans";
+	font-size: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+footer {
+	font-family: "Gill Sans";
+	font-size:11px;
+	text-align:center;
+	padding: 50px 50px;
+	border-top: 100px;
+	clear: both;
+	
+}
+
+.indexfooter {
+	font-family: "Gill Sans";
+	font-size:11px;
+	text-align:center;
+	padding: 140px 50px;
+	border-top: 100px;
+
+}
+
+aside {
+	font-family: "Gill Sans";
+	font-size: 15px;
+	float: right;
+	margin-right: 50px;
+}
+
+p {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.primerafrase{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+a {	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	
+}
+
+.Explicacion {
+	padding: 100px 100px;
+	background-color: GhostWhite;
+}
+
+.BotonBack {
+	margin-top: 40px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background-color: GhostWhite;
+	box-shadow: 2px 3px 0px #A9A9A9;
+}
+
+.BotonNuevo {
+	margin-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background-color: sandybrown;
+	box-shadow: 2px 3px 0px #A9A9A9;
+}
+
+nav {
+	background-color: sandybrown;
+	padding: 10px 10px;
+}
+
+img.cabeza {
+	width: 1160px;
+	display: block;
+	margin: auto;
+	box-shadow: 2px 2px 5px #999;
+}
+
+img.medium {
+	width: 300px;
+	height 100px;
+	align: center;
+	margin-left: 15px;
+	margin-right: 0px;
+	margin-top: 30px;
+}
+

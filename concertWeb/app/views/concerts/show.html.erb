@@ -1,0 +1,57 @@
+<head>
+	<style type="text/css">
+
+	a:link {   
+ 
+ 	text-decoration:none;   
+
+	}   
+
+	</style>
+
+</head>
+
+<header>
+	<img class="cabeza" src="/images/manos.jpg"/>
+</header>
+
+<h3>
+	<strong>Band:</strong>
+	<%= @concerts.band %>
+</h3>
+
+<nav>
+<p>
+	<strong>Venue:</strong>
+	<%= @concerts.venue %>
+
+	<strong>City:</strong>
+	<%= @concerts.city %>
+
+	<strong>Date:</strong>
+	<%= @concerts.date %>
+
+	<strong>Price:</strong>
+	<%= @concerts.price %>
+
+	<strong>Likes:</strong>
+	<%= @concerts.likes %>
+</p>
+
+<p class="Explicacion">
+	<strong>Description:</strong>
+	<%= @concerts.description %>
+</p>
+
+<p class="BotonBack"><%= link_to 'Like!', :controller => :concerts, :action => :like %></p>
+<p class="BotonBack"><%= link_to 'Back', concerts_path %></p>
+
+</nav>
+
+
+
+<footer>
+	<hr>
+	<p>Página web creada por: Manu Ábalos, Alfredo García, Jose Luis Cantalejo y Pablo Iriarte</p>
+	<p>-30 de Abril de 2015-</p>
+</footer>
